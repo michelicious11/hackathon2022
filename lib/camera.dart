@@ -91,14 +91,14 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  color: Color(0xAA332639),
+                  color: const Color(0xAA332639),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       IconButton(
                           iconSize: 40,
-                          icon: Icon(Icons.camera_alt, color: Colors.white),
+                          icon: const Icon(Icons.camera_alt, color: Colors.white),
                           onPressed: () => captureImage(context))
                     ],
                   ),
@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
             );
           }
           else {
-            return Center(child: CircularProgressIndicator(),);
+            return const Center(child: CircularProgressIndicator(),);
           }
         },
       ),
@@ -147,13 +147,13 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
 class DisplayPictureScreen extends StatelessWidget {
   final XFile image;
 
-  DisplayPictureScreen({Key? key, required this.image}): super(key: key);
+  const DisplayPictureScreen({Key? key, required this.image}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Display'),),
-      body: Container(
+      appBar: AppBar(title: const Text('Display'),),
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Image.file(File(image.path), fit: BoxFit.fill,),

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MaterialApp(
     title: 'SnapCity',
-    home: FirstRoute(),
   ));
 }
 
@@ -38,5 +37,6 @@ class SecondRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Camera();
+
   }
 }
