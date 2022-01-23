@@ -25,6 +25,10 @@ class _MyAppState extends State<MyApp> {
     });
     print("test");
   }
+=========
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+>>>>>>>>> Temporary merge branch 2
 
   @override
   Widget build(BuildContext context) {
