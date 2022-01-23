@@ -1,6 +1,6 @@
 # snapcity
 
-A new Flutter project.
+A project where ordinary citizens can help keep their city clean by sending photos of potholes, graffiti and other things to their city council so they can get whatever it is cleaned or fixed. Sending a photo and the user location to a centralized data base would be the solution. 
 
 ## Getting Started
 
