@@ -2,13 +2,13 @@ import 'camera.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(const FirstRoute(
     title: 'SnapCity',
   ));
 }
 
 class FirstRoute extends StatelessWidget {
-  const FirstRoute({Key? key}) : super(key: key);
+  const FirstRoute({Key? key, required String title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
