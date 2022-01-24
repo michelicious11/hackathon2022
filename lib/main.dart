@@ -2,8 +2,9 @@ import 'camera.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const FirstRoute(
+  runApp(const MaterialApp(
     title: 'SnapCity',
+    home: FirstRoute(title: "SnapCity")
   ));
 }
 
